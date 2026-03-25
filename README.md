@@ -138,7 +138,7 @@ Data is stored locally using `.dat` files:
 
 ### 🔧 Prerequisites
 
-* Java JDK 8+
+* Java JDK 14+
 * Git
 
 ---
