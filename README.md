@@ -10,7 +10,7 @@ This project simulates a **real-world vehicle rental platform** with scalability
 The current version uses a **CLI (Command Line Interface)** and **file-based storage**, and is designed to be extended into:
 
 * 🌐 Web / GUI-based application
-* 🗄️ Database-driven system (MySQL / PostgreSQL)
+* 🗄️ Database-driven system (PostgreSQL)
 * 🔐 Secure authentication
 * 💳 Payment-enabled platform
 
@@ -126,12 +126,11 @@ Data is stored locally using `.dat` files:
 ## 🚀 Future Roadmap
 
 * 🎨 GUI (JavaFX / Web UI)
-* 🗄️ Database integration (MySQL / PostgreSQL)
+* 🗄️ Database integration (PostgreSQL)
 * 🔐 Secure authentication system
 * 🔄 Booking cancellation feature
 * 📊 Admin dashboard
 * 💳 Payment integration
-* 🌐 REST API backend (Spring Boot)
 
 ---
 
