@@ -171,7 +171,7 @@ java main.Admin
 #### User Panel
 
 ```bash
-java main.UserMain
+java main.Main
 ```
 
 ---
