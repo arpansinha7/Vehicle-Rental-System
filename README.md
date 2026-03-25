@@ -125,7 +125,7 @@ Data is stored locally using `.dat` files:
 
 ## 🚀 Future Roadmap
 
-* 🎨 GUI (JavaFX / Web UI)
+* 🎨 GUI (SwingUI)
 * 🗄️ Database integration (PostgreSQL)
 * 🔐 Secure authentication system
 * 🔄 Booking cancellation feature
