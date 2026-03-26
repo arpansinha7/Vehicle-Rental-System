@@ -187,7 +187,7 @@ Contributions are welcome! 🚀
 2. Clone your fork
 
 ```bash
-git clone https://github.com/arpansinha7/DriveEasy.git
+git clone https://github.com/<Your Username>/DriveEasy.git
 ```
 
 3. Create a branch
