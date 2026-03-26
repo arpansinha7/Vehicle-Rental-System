@@ -72,13 +72,13 @@ public class Main{
                 {
                     ArrayList <Vehicle> vehicles = vehicleService.getAllVehicles();
 
-                    System.out.println("\n---Available Vehicles---");
+                    System.out.println("\n---Vehicles---");
+
                     for(int i=0;i<vehicles.size();i++)
                     {
-                        if(vehicles.get(i).isAvailable())
-                        {
-                        System.out.println((i+1) + ". " + vehicles.get(i).getVehicleName() + " - $" + vehicles.get(i).getPricePerDay());
-                        }
+                        String status = vehicles.get(i).isAvailable() ? "Available" : "Not Available";
+
+                        System.out.println((i+1) + ". " + vehicles.get(i).getVehicleName() + " - $" + vehicles.get(i).getPricePerDay() + " | " + status);
                     }
 
                 }
@@ -107,7 +107,7 @@ public class Main{
                     System.out.print("Enter choice: ");
                     int vChoice = sc.nextInt();
 
-                    if(vChoice < 1 || vChoice > list.size() || !list.get(vChoice - 1).isAvailable())
+                    if(vChoice < 1 || vChoice > list.size())
                     {
                         System.out.println("Invalid Choice");
                         break;
@@ -120,7 +120,15 @@ public class Main{
                         break;
                     }
 
-                    Vehicle selected = list.get(vChoice - 1);
+                    ArrayList<Vehicle> available = new ArrayList<>();
+
+                    for(Vehicle v : list)
+                    {
+                        if(v.isAvailable())
+                            available.add(v);
+                    }
+
+                    Vehicle selected = available.get(vChoice - 1);
                     
                     if(!selected.isAvailable())
                     {
